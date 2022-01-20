@@ -1,0 +1,13 @@
+@import "~@ag-grid-enterprise/all-modules/dist/styles/ag-grid.css";
+@import "~@ag-grid-enterprise/all-modules/dist/styles/ag-theme-balham.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.greenBackground {
+	background-color: #b5e6b5;
+  }
+  
+  .redFont {
+	color: red;
+	font-style: italic;
+	text-decoration: underline;
+  }

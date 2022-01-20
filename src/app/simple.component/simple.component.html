@@ -1,0 +1,24 @@
+<ag-grid-angular style="width: 100%; padding-right: 20px; height: 650px;" class="ag-theme-balham"
+	[columnDefs]="columnDefs"
+	[sideBar]="sideBar"
+	[rowData]="rowData"
+
+	[defaultColDef]="defaultColDef"
+	[frameworkComponents]="frameworkComponents"
+	[tooltipShowDelay]="tooltipShowDelay"
+	[modules]="modules"
+
+	(gridReady)="onGridReady($event)"
+	(modelUpdated)="onModelUpdated()"
+	[excelStyles]="excelStyles"
+
+	(cellClicked)="onCellClicked($event)"
+	(cellDoubleClicked)="onCellDoubleClicked($event)"
+	(cellContextMenu)="onCellContextMenu($event)">
+</ag-grid-angular>
+
+<div>
+	<button (click)="onBtExport()" style="margin-bottom: 5px; font-weight: bold;">
+		Export to Excel
+	</button>
+</div>
